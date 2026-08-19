@@ -1439,52 +1439,60 @@ button {
         font-size: 20px;
     }
 
+
     /* =========================================
-       REEL INFO - MOVE UP ON MOBILE
+       REEL INFO - MOVE HIGHER
     ========================================= */
 
     .reel-info {
         left: 15px;
         right: 75px;
 
-        /* كان 20px */
-        bottom: 42px;
+        /* ارفع العنوان والمعلومات */
+        bottom: 100px;
     }
 
+
     /* =========================================
-       REEL ACTIONS - MOVE UP ON MOBILE
+       REEL ACTIONS - MOVE HIGHER
     ========================================= */
 
     .reel-actions {
         right: 9px;
 
-        /* كان 20px */
-        bottom: 42px;
+        /* ارفع الـ Like / Comment / Bookmark */
+        bottom: 100px;
 
         gap: 15px;
     }
 
+
     .action i {
         font-size: 22px;
     }
+
 
     .avatar {
         width: 39px;
         height: 39px;
     }
 
+
     .profile-page {
         padding: 22px 15px;
     }
+
 
     .profile-image {
         width: 75px;
         height: 75px;
     }
 
+
     .comments-video {
         height: 190px;
     }
+
 
     .auth-box {
         padding: 30px 20px;
@@ -1520,6 +1528,14 @@ button {
 
     .reel-actions {
         gap: 12px;
+
+        /* نخلي الأكشنز مرفوعة كمان */
+        bottom: 90px;
+    }
+
+    .reel-info {
+        /* العنوان يطلع لفوق */
+        bottom: 90px;
     }
 
     .auth-logo {
