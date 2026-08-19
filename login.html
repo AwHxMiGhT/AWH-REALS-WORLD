@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AWH Reals - Login</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="login-body">
+
+
+<main class="auth-page">
+
+
+    <div class="auth-box">
+
+
+        <!-- LOGO -->
+
+        <div class="auth-logo">
+            AWH <span>REALS</span>
+        </div>
+
+
+        <p class="auth-subtitle">
+            Welcome to AWH Reals World
+        </p>
+
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <form id="login-form">
+
+
+            <div class="auth-input">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    id="login-username"
+                    type="text"
+                    placeholder="Username"
+                    autocomplete="username"
+                    required>
+
+            </div>
+
+
+
+            <div class="auth-input">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    id="login-password"
+                    type="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="red-button">
+
+                Login
+
+            </button>
+
+
+            <p
+                id="login-message"
+                class="auth-message">
+            </p>
+
+
+        </form>
+
+
+
+        <!-- CREATE ACCOUNT -->
+
+        <button
+            id="show-register"
+            class="auth-link"
+            type="button">
+
+            Don't have an account?
+            <strong>Create Account</strong>
+
+        </button>
+
+
+
+        
+
+
+
+        <!-- ================= REGISTER ================= -->
+
+        <form
+            id="register-form"
+            class="hidden">
+
+
+            <div class="auth-input">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    id="register-username"
+                    type="text"
+                    placeholder="Username"
+                    minlength="3"
+                    maxlength="20"
+                    autocomplete="username"
+                    required>
+
+            </div>
+
+
+
+            <div class="auth-input">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    id="register-password"
+                    type="password"
+                    placeholder="Password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+
+            <div class="auth-input">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    id="register-confirm"
+                    type="password"
+                    placeholder="Confirm Password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="red-button">
+
+                Create Account
+
+            </button>
+
+
+
+            <p
+                id="register-message"
+                class="auth-message">
+            </p>
+
+
+
+            <button
+                id="show-login"
+                class="auth-link"
+                type="button">
+
+                Already have an account?
+                <strong>Login</strong>
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+
+</main>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
+
