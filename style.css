@@ -1439,15 +1439,28 @@ button {
         font-size: 20px;
     }
 
+    /* =========================================
+       REEL INFO - MOVE UP ON MOBILE
+    ========================================= */
+
     .reel-info {
         left: 15px;
         right: 75px;
-        bottom: 20px;
+
+        /* كان 20px */
+        bottom: 42px;
     }
+
+    /* =========================================
+       REEL ACTIONS - MOVE UP ON MOBILE
+    ========================================= */
 
     .reel-actions {
         right: 9px;
-        bottom: 20px;
+
+        /* كان 20px */
+        bottom: 42px;
+
         gap: 15px;
     }
 
