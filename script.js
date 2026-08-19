@@ -3062,3 +3062,63 @@ function initializeComments() {
 console.log(
     "AWH Reals loaded successfully."
 );
+
+
+/* =====================================================
+   RESET REEL WHEN LEAVING IT
+===================================================== */
+
+const reelObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            const video = entry.target.querySelector(".reel-video");
+
+            if (!video) return;
+
+            if (entry.isIntersecting) {
+
+                // دخل الريل
+                video.currentTime = 0;
+
+                video.play().catch(() => {});
+
+            } else {
+
+                // خرج من الريل
+                video.pause();
+
+                // لما ترجع له يبدأ من الأول
+                video.currentTime = 0;
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.75
+    }
+);
+
+
+/* =====================================================
+   OBSERVE ALL REELS
+===================================================== */
+
+function observeReels() {
+
+    document.querySelectorAll(".reel").forEach((reel) => {
+
+        reelObserver.observe(reel);
+
+    });
+
+}
+
+
+/* =====================================================
+   START
+===================================================== */
+
+observeReels();
