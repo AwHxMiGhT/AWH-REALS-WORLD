@@ -1,26 +1,29 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
 
 import {
     getAuth,
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
-    signInAnonymously,
-    onAuthStateChanged
+    onAuthStateChanged,
+    signOut
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
 
 import {
     getFirestore,
     doc,
     setDoc,
     getDoc,
+    getDocs,
     collection,
     addDoc,
     onSnapshot,
     query,
     orderBy,
     serverTimestamp,
-    updateDoc,
-    arrayUnion,
     deleteDoc,
     runTransaction
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
@@ -63,11 +66,19 @@ const app =
     );
 
 
+/* =====================================================
+   AUTH
+===================================================== */
+
 const auth =
     getAuth(
         app
     );
 
+
+/* =====================================================
+   FIRESTORE
+===================================================== */
 
 const db =
     getFirestore(
@@ -81,44 +92,33 @@ const db =
 
 export {
 
-    app,
+    /* Firebase */
 
     auth,
-
     db,
 
+
+    /* Authentication */
+
     signInWithEmailAndPassword,
-
     createUserWithEmailAndPassword,
-
-    signInAnonymously,
-
     onAuthStateChanged,
+    signOut,
+
+
+    /* Firestore */
 
     doc,
-
     setDoc,
-
     getDoc,
-
+    getDocs,
     collection,
-
     addDoc,
-
     onSnapshot,
-
     query,
-
     orderBy,
-
     serverTimestamp,
-
-    updateDoc,
-
-    arrayUnion,
-
     deleteDoc,
-
     runTransaction
 
 };
