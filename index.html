@@ -28,6 +28,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- YOUR CSS STAYS SEPARATE -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -37,10 +38,208 @@
 
 
 <!-- =====================================================
+     AUTH SCREEN
+===================================================== -->
+
+<div id="auth-screen" class="login-body">
+
+
+    <main class="auth-page">
+
+
+        <div class="auth-box">
+
+
+            <!-- LOGO -->
+
+            <div class="auth-logo">
+                AWH <span>REALS</span>
+            </div>
+
+
+            <p class="auth-subtitle">
+                Welcome to AWH Reals World
+            </p>
+
+
+
+            <!-- =================================================
+                 LOGIN FORM
+            ================================================== -->
+
+            <form id="login-form">
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        id="login-username"
+                        type="text"
+                        placeholder="Username"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        id="login-password"
+                        type="password"
+                        placeholder="Password"
+                        autocomplete="current-password"
+                        required>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="red-button">
+
+                    Login
+
+                </button>
+
+
+
+                <p
+                    id="login-message"
+                    class="auth-message">
+                </p>
+
+
+            </form>
+
+
+
+            <!-- CREATE ACCOUNT -->
+
+            <button
+                id="show-register"
+                class="auth-link"
+                type="button">
+
+                Don't have an account?
+                <strong>Create Account</strong>
+
+            </button>
+
+
+
+            <!-- =================================================
+                 REGISTER FORM
+            ================================================== -->
+
+            <form
+                id="register-form"
+                class="hidden">
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        id="register-username"
+                        type="text"
+                        placeholder="Username"
+                        minlength="3"
+                        maxlength="20"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        id="register-password"
+                        type="password"
+                        placeholder="Password"
+                        minlength="6"
+                        autocomplete="new-password"
+                        required>
+
+                </div>
+
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        id="register-confirm"
+                        type="password"
+                        placeholder="Confirm Password"
+                        minlength="6"
+                        autocomplete="new-password"
+                        required>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="red-button">
+
+                    Create Account
+
+                </button>
+
+
+
+                <p
+                    id="register-message"
+                    class="auth-message">
+                </p>
+
+
+
+                <button
+                    id="show-login"
+                    class="auth-link"
+                    type="button">
+
+                    Already have an account?
+                    <strong>Login</strong>
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- =====================================================
      APP
 ===================================================== -->
 
-<div id="app">
+<div
+    id="app"
+    class="hidden">
 
 
     <!-- =================================================
@@ -49,12 +248,14 @@
 
     <header class="top-navbar">
 
+
         <div class="logo">
             AWH <span>REALS</span>
         </div>
 
 
         <div class="top-actions">
+
 
             <button
                 class="icon-button"
@@ -75,14 +276,16 @@
 
             </button>
 
+
         </div>
+
 
     </header>
 
 
 
     <!-- =================================================
-         MAIN
+         MAIN CONTENT
     ================================================== -->
 
     <main class="main-content">
@@ -107,6 +310,7 @@
                     data-reel="1"
                     data-video="assets/videos/1.mp4">
 
+
                     <video
                         class="reel-video"
                         src="assets/videos/1.mp4"
@@ -122,12 +326,15 @@
 
                     <div class="reel-info">
 
+
                         <div class="creator">
+
 
                             <img
                                 src="assets/images/IMG_20260805_171433.jpg"
                                 class="avatar"
                                 alt="Profile">
+
 
                             <div>
 
@@ -141,17 +348,20 @@
 
                             </div>
 
+
                         </div>
 
 
                         <p>
-                            AWH Reals World 
+                            AWH Reals World
                         </p>
+
 
                     </div>
 
 
                     <div class="reel-actions">
+
 
                         <button
                             class="action like-button"
@@ -194,13 +404,13 @@
 
                         </button>
 
+
                     </div>
+
 
                 </article>
 
-
-
-                <!-- ================= REEL 2 ================= -->
+                                <!-- ================= REEL 2 ================= -->
 
                 <article
                     class="reel"
@@ -242,7 +452,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -332,7 +542,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -422,7 +632,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -512,7 +722,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -602,7 +812,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -692,7 +902,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -782,7 +992,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -872,7 +1082,7 @@
                         </div>
 
                         <p>
-                            AWH Reals 
+                            AWH Reals
                         </p>
 
                     </div>
@@ -962,7 +1172,7 @@
                         </div>
 
                         <p>
-                            AWH Reals World 
+                            AWH Reals World
                         </p>
 
                     </div>
@@ -1013,9 +1223,7 @@
 
         </section>
 
-
-
-        <!-- =================================================
+                <!-- =================================================
              ADD REEL
         ================================================== -->
 
@@ -1052,9 +1260,10 @@
             <div class="profile-page">
 
 
-                <!-- PROFILE USERNAME -->
+                <!-- PROFILE HEADER -->
 
                 <div class="profile-header">
+
 
                     <div class="profile-user">
 
@@ -1075,7 +1284,20 @@
 
                     </div>
 
+
                 </div>
+
+
+
+                <!-- PROFILE BIO -->
+
+                <p
+                    id="profile-bio"
+                    class="profile-bio">
+
+                    Welcome to AWH Reals 🔥
+
+                </p>
 
 
 
@@ -1094,6 +1316,7 @@
                     id="saved-grid"
                     class="profile-grid">
 
+
                     <div class="empty-saved">
 
                         <i class="fa-regular fa-bookmark"></i>
@@ -1104,7 +1327,24 @@
 
                     </div>
 
+
                 </div>
+
+
+
+                <!-- LOGOUT -->
+
+                <button
+                    id="logoutButton"
+                    class="red-button profile-logout"
+                    type="button">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </button>
+
 
             </div>
 
@@ -1122,6 +1362,8 @@
     <nav class="bottom-nav">
 
 
+        <!-- HOME -->
+
         <button
             class="nav-item active"
             data-section="home"
@@ -1137,7 +1379,7 @@
 
 
 
-        <!-- ADD REEL - UI ONLY -->
+        <!-- ADD REEL -->
 
         <button
             class="add-button"
@@ -1149,6 +1391,8 @@
         </button>
 
 
+
+        <!-- PROFILE -->
 
         <button
             class="nav-item"
@@ -1166,6 +1410,7 @@
 
     </nav>
 
+
 </div>
 
 
@@ -1179,7 +1424,10 @@
     class="comments-screen">
 
 
+    <!-- COMMENTS HEADER -->
+
     <header class="comments-header">
+
 
         <button
             id="comments-back"
@@ -1194,6 +1442,7 @@
             Comments
         </h2>
 
+
     </header>
 
 
@@ -1202,6 +1451,7 @@
 
     <div class="comments-video">
 
+
         <video
             id="comment-video"
             muted
@@ -1209,15 +1459,17 @@
             playsinline>
         </video>
 
+
     </div>
 
 
 
-    <!-- COMMENTS -->
+    <!-- COMMENTS LIST -->
 
     <div
         id="comments-list"
         class="comments-list">
+
 
         <div class="no-comments">
 
@@ -1229,15 +1481,17 @@
 
         </div>
 
+
     </div>
 
 
 
-    <!-- COMMENT INPUT -->
+    <!-- COMMENT FORM -->
 
     <form
         id="comment-form"
         class="comment-form">
+
 
         <input
             id="comment-input"
@@ -1254,18 +1508,25 @@
 
         </button>
 
+
     </form>
+
 
 </div>
 
 
 
 <!-- =====================================================
-     SCRIPT
+     JAVASCRIPT
 ===================================================== -->
 
-<script type="module" src="script.js"></script>
+<script
+    type="module"
+    src="script.js">
+</script>
+
 
 </body>
 
 </html>
+
