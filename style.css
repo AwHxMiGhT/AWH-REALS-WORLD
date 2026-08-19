@@ -3270,16 +3270,16 @@ button {
     }
 
     .reel-info {
-        left: 15px;
-        right: 75px;
-        bottom: 20px;
-    }
+    left: 15px;
+    right: 75px;
+    bottom: 100px !important;
+}
 
-    .reel-actions {
-        right: 9px;
-        bottom: 20px;
-        gap: 15px;
-    }
+.reel-actions {
+    right: 9px;
+    bottom: 100px !important;
+    gap: 15px;
+}
 
     .action i {
         font-size: 22px;
